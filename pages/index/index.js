@@ -35,7 +35,7 @@ Page({
     request({
       url: '/home/swiperdata',
     }).then(result => {
-      console.log(result);
+      // console.log(result);
       this.setData({
         swiperList: result
       })
@@ -46,7 +46,7 @@ Page({
     request({
       url: '/home/catitems',
     }).then(result => {
-      console.log(result);
+      // console.log(result);
       this.setData({
         catesList: result
       })
@@ -57,7 +57,7 @@ Page({
     request({
       url: '/home/floordata',
     }).then(result => {
-      console.log(result);
+      // console.log(result);
       this.setData({
         floorList: result
       })

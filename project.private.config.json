@@ -39,6 +39,12 @@
         {
           "name": "pages/cart/cart",
           "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pay/pay",
+          "pathName": "pages/pay/pay",
           "scene": null
         }
       ]

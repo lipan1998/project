@@ -53,7 +53,7 @@ Page({
   },
   // 点击加入购物车
   handleCartAdd() {
-    console.log("加入");
+    // console.log("加入");
     // 1 获取缓存中的购物车数据 数组
     let cart = wx.getStorageSync("cart") || [];
     // 2 判断当前商品是否已存在于购物车
@@ -61,6 +61,7 @@ Page({
     if (index === -1) {
       // 3 不存在 第一次添加
       this.GoodsObj.num = 1;
+      this.GoodsObj.checked = true;
       cart.push(this.GoodsObj)
     } else {
       // 4 已将存在购物车 执行num++
