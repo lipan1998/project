@@ -1,2 +1,2 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<!-- pages/login/login.wxml -->
+<button type="primary" plain open-type="getUserInfo" bindgetuserinfo="bandleGetUserInfo">登录</button>

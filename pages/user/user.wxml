@@ -1,2 +1,2 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- pages/user/user.wxml -->
+<navigator url="/pages/login/login">登录</navigator>
