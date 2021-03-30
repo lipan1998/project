@@ -16,7 +16,7 @@
         widthFix 让图片标签的宽高和 图片内容的宽高相适应 -->
         <swiper autoplay indicator-dots circular>
             <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
-                <navigator>
+                <navigator url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
                     <image mode="widthFix" src="{{item.image_src}}"></image>
                 </navigator>
             </swiper-item>
@@ -25,7 +25,7 @@
     <!-- 轮播图结束 -->
     <!-- 导航栏开始 -->
     <view class="index_cate">
-        <navigator wx:for="{{catesList}}" wx:key="name">
+        <navigator wx:for="{{catesList}}" wx:key="name" url="/pages/category/category" open-type="switchTab">
             <image mode="widthFix" src="{{item.image_src}}"></image>
         </navigator>
     </view>
@@ -39,7 +39,7 @@
             </view>
             <!-- 内容 -->
             <view class="floor_list">
-                <navigator wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="name">
+                <navigator wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="name" url="/pages/goods_list/goods_list?name={{item2.name}}">
                     <image mode="{{index2 === 0 ? 'widthFix':'scaleToFill'}}" src="{{item2.image_src}}"></image>
                 </navigator>
             </view>

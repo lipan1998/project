@@ -62,6 +62,8 @@ Page({
         floorList: result
       })
     })
+
   }
+
 
 });
